@@ -1,0 +1,1970 @@
+/* Set the background color for the popup content - opening for maps layout */
+/* Set the background color for the popup content */
+/* Loan Summary section - design */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 370px) and (max-width: 767.98px) {
+	.icon-bar {
+      position: fixed;
+      bottom: 0 !important;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+}
+
+.icon-bar {
+  background-color: #029a47;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 999;
+  
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+html[lang='en-US'] .icon-bar{
+	left: 0;
+  
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+html[dir='rtl'] .icon-bar{
+	right: 0;
+  
+  	border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border-top-right-radius: 0;
+  	border-bottom-right-radius: 0;
+}
+
+.news_date img{
+	object-fit: fill !important;
+}
+
+ul.bulleted-list{
+	list-style: inside;
+}
+
+.bulleted-list li::marker{
+	color: #9f8241;
+}
+
+.member-desg.no_desg {
+  display: none;
+}
+.all-projects-wrap{
+    display: flex;
+}
+.all-projects-wrap .project-section{
+    flex: 1;
+    margin: 10px;
+    border: 1px solid #ddd; /*Border color*/
+    box-sizing: border-box;
+    padding:20px;
+    border-radius:35px;
+}
+
+/*Apply display: flex to country-listing-section */
+.country-listing-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Style for each country data wrap */
+.country-data-wrap {
+  width: calc(33.33% - 20px); /* Adjust the width as needed, considering margin */
+  margin: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd; /*Border color*/
+  padding: 15px;
+  border-radius:35px;
+}
+.country-filter-section{
+  display: flex;
+}
+.country-filter-section .half{
+  flex: 1;
+  padding: 10px;
+}
+.country-filter-wrap{
+  display: flex;
+}
+
+
+/*Optional: Add styling for other elements within the country data wrap*/
+.country-img-wrap {
+  
+}
+
+.country-signed-loans,
+.country-exended-grants {
+ 
+}
+
+/*****************/
+/* Text Styling */
+/****************/
+
+/* @font-face {
+    font-family: "Al Jazeera Arabic", sans-serif;
+    src: url('../fonts/Al-Jazeera-Arabic-Bold.woff2') format('woff2'),
+        url('../fonts/Al-Jazeera-Arabic-Bold.woff') format('woff'),
+        url('../fonts/Al-Jazeera-Arabic-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+
+@font-face {
+  font-family: "Al Jazeera Arabic", sans-serif;
+  src: url('/wp-content/plugins/arab-funds/includes/fonts/Al-Jazeera-Arabic-Bold.ttf') format('truetype');
+
+}
+
+/* 
+@font-face {
+ font-family:"Al Jazeera Arabic", sans-serif;
+  src: url('../fonts/Al-Jazeera-Arabic-Regular.woff2') format('woff2'),
+      url('../fonts/Al-Jazeera-Arabic-Regular.woff') format('woff'),
+      url('../fonts/Al-Jazeera-Arabic-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+} */
+@font-face {
+ font-family:"Al Jazeera Arabic", sans-serif;
+  src: url('/wp-content/plugins/arab-funds/includes/fonts/Al-Jazeera-Arabic-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* Font Family */
+.al-jazeera-bold {
+  font-family: "Al Jazeera Arabic", sans-serif;
+  font-weight: 700;
+}
+
+.al-jazeera-regular {
+ font-family:"Al Jazeera Arabic", sans-serif;
+}
+
+/* Font Size */
+.text-48 {
+  font-size: 48px;
+}
+
+.text-28 {
+  font-size: 28px;
+}
+
+.text-26 {
+  font-size: 26px !important;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.text-22 {
+  font-size: 22px;
+}
+
+.text-21 {
+  font-size: 21px;
+}
+
+.text-19 {
+  font-size: 19px;
+}
+
+.text-16 {
+  font-size: 16px;
+}
+
+.text-15 {
+  font-size: 15px;
+}
+
+/* Font Colors */
+.text-gray {
+  color: #4A4B4C;
+}
+
+.text-success {
+  color: #029B47;
+}
+
+.text-white {
+  color: white;
+}
+.country-info .text-white {
+  color: white !important;
+}
+
+/* Text Alignments */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+/* *,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+} */
+
+a {
+  text-decoration: none;
+}
+.gap-10 {
+  gap: 10px;
+}
+
+/* Utility Classes */
+
+.w-50 {
+  width: 50%;
+}
+/* body {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: "al-jazeera-arabicbold", sans-serif;
+  letter-spacing: 0px;
+  font-weight: 400;
+  direction: rtl;
+  text-align: right;
+  line-height: 1.5;
+  overflow-x: hidden;
+} */
+
+::placeholder {
+  color: #0A3023;
+  opacity: 1;
+  font-family: "Al Jazeera Arabic", sans-serif;
+  font-weight: 700;
+}
+
+::-ms-input-placeholder {
+  color: #0A3023;
+  font-family: "Al Jazeera Arabic", sans-serif;
+  font-weight:700 ;
+}
+
+
+
+img,
+picture,
+video {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  /* text-wrap: balance; */
+  margin-bottom: 0px;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/* Flex Classes */
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/* Utility Classes */
+.icon-circle {
+  --icon-cirlce-size: 35px;
+  border-radius: 50%;
+  width: var(--icon-cirlce-size);
+  height: var(--icon-cirlce-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-circle.rotate-arrow.green-circle {
+  transform: rotate(180deg);
+}
+.green-circle {
+  border: 2px solid #029B47;
+}
+
+.text-underline-green {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.anchor-green-underline a.text-underline-green{
+  text-decoration: underline !important; 
+  text-underline-offset: 8px;
+}
+.country-flag, .line, .country-flag-title, .country-flag-info {
+  margin: 5px 20px;
+}
+.country-flag-info {
+  text-align: center;
+}
+.popup_footer {
+  display: flex;
+  background: #F6F4F4;
+  padding: 20px;
+  border-radius: 0 0 29px 29px;
+  justify-content: space-around;
+}
+.countries_read_more{
+background: #029B47;
+transition:all 0.42s;
+color: #fff;
+}
+.countries_read_more:hover{
+background: #05602e;
+color: #fff;
+}
+
+.countries_close{
+background: #4A4B4C;
+transition:all 0.42s;
+color: #fff;
+}
+.countries_close:hover{
+background: #2E2F30;
+color: #fff;
+}
+.countries_btn{  
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 110px;
+  text-align: center;
+transition:all 0.42s;
+}
+
+/* Summary Cards */
+.summary_sec .e-con-inner, .country_sec{
+    display: block !important;
+}
+.country_container {
+    margin: 0 auto;
+}
+.summary-cards {
+  display: flex;
+  justify-content: space-between;
+  font-family: "al-jazeera-arabicbold", sans-serif;
+}
+
+.summary-card {
+  width: 30%;
+  min-width: 453px;
+  height: auto;
+  background: #FFFFFF;
+  border: 2px solid #ddd;
+  padding: 25px 30px;
+  border-radius: 35px;
+  position: relative;
+  font-weight: 700;
+}
+.card-content {
+  margin-right: 100px;
+}
+.card-icon img {
+  position: absolute;
+  right: -60px;
+  bottom: 0;
+  background: #fff;
+  padding: 10px;
+}
+html[lang='en-US'] .card-icon img {
+  right: auto;
+  left: -60px;
+}
+html[lang='en-US'] .card-content {
+  margin-right: 0;
+  margin-left: 100px;
+}
+/*.summary-card:is(:hover, :focus) {*/
+/*  border-color: black;*/
+/*}*/
+
+.card-title {
+  font-size: 24px;
+  color: #4A4B4C !important;
+}
+
+.card-subtitle {
+  font-size: 16px;
+  color: #4A4B4C !important;
+}
+.anchor-green-underline .text-underline-green {
+  font-weight: 600;
+}
+.card-numbers {
+  font-size: 28px;
+  color: #9F8241 !important;
+}
+html[dir='rtl'] .card-title, html[dir='rtl'] .card-subtitle, html[dir='rtl'] .card-numbers{
+  font-weight: 700;
+}
+.main-content {
+  margin: 0 auto 4% auto;
+}
+
+.card-icon {
+  margin-top: auto;
+  /*margin-right: -69px;*/
+  margin-left: -69px;
+  background: white;
+  /* padding: 35px 0px 50px 65px; */
+  padding: 35px 65px 50px 0;
+}
+ html[dir='rtl'] .card-icon{
+     margin-right: -69px;
+     padding: 35px 0px 50px 65px;
+     margin-left: 0;
+ }
+
+.summary-note {
+  color: #000000;
+  font-size: 16px;
+ font-family:"Al Jazeera Arabic", sans-serif;
+  margin-top: 20px;
+}
+
+/* Project Single Details - Css */
+ol.bodyTextlist li {
+  margin-left: 1.5em; /* Adjust the left margin to create an indentation */
+}
+
+/* Pagination design - css */
+.simple-pagination ul {
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+  margin-top:20px;
+}
+
+.simple-pagination li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+	color: #666;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: 1px solid #EEE;
+	background-color: #FFF;
+	box-shadow: 0px 0px 10px 0px #EEE;
+}
+
+.simple-pagination .current {
+	color: #FFF;
+	background-color: #1f7a4a;
+	border-color: #1f7a4a;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+	background: #1f7a4a;
+}
+.valid-msg {
+  color: red;
+  position: absolute;
+  min-width: 340px;
+  font-size: 12px;
+  bottom: -25px;
+  left: 10px;
+  right:auto;
+}
+html[dir='rtl'] .valid-msg {
+  bottom: -20px;
+  right: 0;
+  left: auto;
+}
+@media (max-width:1700px) {
+  .summary-card,
+    .summary-car,
+    .summary-card-vertical {
+        transform: scale(0.8);
+    }
+
+    .first-col-row1 {
+        margin-top: 27px;
+    }
+
+    .summary-note {
+        margin-top: 0px;
+    }
+
+    .main-content {
+        margin: 0 0 4% 0;
+    }
+
+    .text-28 {
+        font-size: 26px;
+    }
+
+    .text-26 {
+        font-size: 24px !important;
+    }
+
+    .text-21 {
+        font-size: 19px;
+    }
+
+    .text-16 {
+        font-size: 14px;
+    }
+
+    .summary-table td {
+        font-size: 18px !important;
+    }
+}
+
+.filter-section {
+  display: flex;
+  margin: 30px 0px;
+  justify-content: space-between;
+  font-family: "al-jazeera-arabicbold", sans-serif;
+}
+html[lang='en-US'] .filter-section, html[lang='en-US']  .anchor-green-underline p, html[lang='en-US']  .anchor-green-underline a, html[lang='en-US']  .read-more a {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/*Base*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+li {
+  font-size: 1em;
+}
+
+
+
+/* Country Cards */
+.country-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.country-card {
+  width: 23%;
+  height: auto;
+  background: #FAFAFA 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 29px;
+  padding: 35px 0px 0 0px;
+  margin-bottom: 70px;
+  animation: fadeIn 1s ease-in both;
+  font-family: "al-jazeera-arabicbold", sans-serif;
+  line-height: 1.5;
+}
+.country-card:is(:hover, :focus) {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.country-card .text-19,
+.country-card .text-21{
+font-size: 18px;
+}
+@media (max-width:1350px) {
+  .country-card {
+      width: 30%;
+  }
+}
+
+@media (max-width:1000px) {
+  .country-card {
+      width: 47%;
+  }
+}
+
+@media (max-width:768px) {
+  .country-card {
+      width: 100%;
+  }
+
+  .main-content {
+      margin: 0 0 4% 0;
+  }
+
+  .filter-section {
+      flex-direction: column;
+      gap: 15px;
+      
+  }
+
+  .summary-card {
+      min-width: 374px;
+  }
+}
+
+
+.country-flag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.country-flag .flag-img {
+  --flag-size: 98px;
+  width: var(--flag-size);
+  height: var(--flag-size);
+}
+
+/* .country-flag .flag-img img {
+  height: 100%;
+} */
+
+.country-flag-title {
+  padding: 5px 0px;
+}
+
+.line {
+  height: 1px;
+  background-color: #707070;
+}
+
+.country-flag-info {
+  line-height: 1.2;
+  padding: 10px 0px 16px 0px;
+}
+
+.read-more {
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.dropdown-list label {
+  display: none;
+}
+select#arab-year-filter {
+  min-width: 100px;
+}
+select#arab-country-filter {
+  min-width: 140px;
+}
+#arab-sector-filter {
+  min-width: 260px;
+}
+.link {
+  --link-color: black;
+  color: var(--link-color);
+  background-image: linear-gradient(var(--link-color), var(--link-color));
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  text-shadow: 0.05em 0 white, -0.05em 0 white;
+  transition: all 500ms ease;
+}
+html[dir='rtl'] .read-more {
+  font-family:"Al Jazeera Arabic", sans-serif;
+}
+.link:hover {
+  background-size: 100% 1.5px;
+  transition: all 250ms ease;
+}
+
+.right-to-left {
+  background-position: right bottom;
+}
+
+
+.view-more {
+  padding: 9px 20px;
+  border: 1px solid #029B47;
+  border-radius: 15px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: white;
+}
+
+.view-more:hover {
+  background: #029B47;
+}
+.view-more:focus {
+  background: #029B47;
+}
+.view-more:focus svg{
+  filter: brightness(1000);
+}
+.view-more:hover span {
+  color: white;
+}
+.view-more:focus span {
+  color: white;
+}
+
+.view-more:hover svg path {
+  stroke: white;
+}
+.view-more:focus svg path {
+  color: white;
+}
+
+.view-more svg {
+  transform: rotate(-90deg);
+  width: 24px;
+  height: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Search Bar */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  position: relative;
+  transition: width 1.5s;
+  background: #FFFFFF;
+  border: 1px solid #A5A5A5;
+  border-radius: 14px;
+}
+
+.magnifier {
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 13px;
+}
+html[dir='rtl'] .magnifier {
+  left: 15px;
+  right:auto;
+}
+.search-input {
+  font-size: 19px;
+  background-color: transparent;
+  border: none !important;
+  margin: 10px 10px 10px 10px;
+  width: 100% !important;
+  outline: none;
+  color: #0A3023;
+  transition: width 1s !important;
+  transition-delay: 0.5s !important;
+}
+html[dir='rtl'] .search-input{
+  margin:10px 10px 10px 10px;
+}
+
+.active.search-bar-container {
+  width: 50px;
+}
+
+.active .search-input {
+  width: 0;
+}
+
+
+.form-container {
+  display: flex;
+  gap: 16px;
+}
+
+
+/*Dropdown*/
+
+.dropdown-list {
+  height: 51px;
+}
+
+select.order-by {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  padding-right: 16px;
+  background-image: none;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  background: #FFFFFF;
+  border: 1px solid #A5A5A5;
+  border-radius: 14px;
+  color: #0A3023;
+  font-size: 19px;
+  font-family: "Al Jazeera Arabic", sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url(/wp-content/uploads/2023/11/icon-arrow-1.svg);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 19px;
+}
+html[dir='rtl'] select.order-by {
+    background-position-x: 10%;
+}
+
+select option[disabled][selected] {
+  color: #ccc;
+  font-style: italic;
+}
+
+select.order-by:invalid {
+  color: #999;
+  font-style: italic;
+  border: #888 solid 1px;
+  font-weight: normal;
+}
+
+select.order-by:invalid option {
+  font-style: normal;
+  color: #4b5154;
+}
+
+select.order-by:invalid option[disabled][selected] {
+  color: #ccc;
+  font-style: italic;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translate3d(0, -20%, 0);
+  }
+
+  to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Mobile View */
+@media (max-width: 500px) {
+
+  /* Scrollable Horizental Tabs */
+  .scrollable-tabs {
+      display: inline-flex;
+      width: 100%;
+      overflow-x: auto;
+      -ms-overflow-style: none;
+      overflow: -moz-scrollbars-none;
+  }
+
+  .scrollable-tabs .summary-card {
+      flex-wrap: wrap;
+  }
+
+}
+/* Project Summary */
+.table-filter-tabs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 45px;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.project-table tbody tr:last-child td:last-child {
+    border-radius: 0 0 0 10px;
+}
+.project-table tbody tr:last-child td:first-child {
+    border-radius: 0 0 10px 0;
+}
+.project-table tbody tr:last-child {
+    border-radius: 0 0 10px 10px;
+}
+.dropdown-list label {
+
+  margin-bottom: 8px;
+}
+html[lang='en-US'] .location-sort img {
+  right: auto;
+  left: 20px;
+}
+html[lang='en-US'] .location-sort select.order-by {
+  padding-right: 0px;
+}
+html[lang='en-US'] .location-sort select.order-by {
+  padding-left: 55px;
+}
+html[lang='en-US'] .text-26 {
+  font-size: 22px !important;
+}
+html[lang='en-US'] .al-jazeera-regular{
+  font-family: Poppins !important;
+}
+html[lang='en-US'] .dropdown-list label {
+  font-family: Poppins;
+  font-size: 18px;
+}
+
+html[lang='en-US'] .tab-links:nth-child(2) {
+  margin-right: 0px;
+  margin-left: 30px;
+}
+html[lang='en-US'] .radio-button, html[lang='en-US']  select{
+  font-family: Poppins;
+}
+html[lang='en-US'] select.order-by {
+  font-size: 18px;
+  padding-left: 16px;
+}
+html[lang='en-US'] .summary-table th {
+  font-size: 16px;
+  font-family: Poppins;
+}
+html[lang='en-US'] .summary-table td {
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight:400 ;
+}
+.summary-table td.td {
+  text-align: right;
+  padding-right: 3rem;
+}
+html[dir='rtl'] .project-table td.td {
+  text-align: left !important;
+}
+html[dir='rtl'] .project-table td.td.text-right {
+  text-align: right !important;
+}
+
+html[dir='rtl'] .summary-table td.td {
+  text-align: right;
+  padding-left: 3rem;
+  padding-right: 30px;
+  font-weight: normal;
+}
+html[lang='en-US']  .project-name a, .project-name a:visited {
+  font-family: Poppins !important;
+}
+
+html[lang='en-US'] .table-heading {
+  font-family: Poppins !important;
+}
+html[lang='en-US'] .text-28 {
+  font-size: 18px;
+}
+.anchor-green-underline .text-28 {
+  font-weight: 600;
+}
+html[lang='en-US'] .summary-table .text-right {
+  text-align:left !important;
+  font-family:"Poppins", sans-serif !important;
+}
+html[lang='en-US'] .summary-table th {
+  text-align: left;
+  font-family:"Poppins", sans-serif !important;
+}
+table.summary-table thead:first-child tr:first-child th {
+  border-block-start: 0px solid hsla(0,0%,50.2%,.5019607843);
+}
+.summary-table tfoot th {
+  text-align: center !important;
+}
+/* .dropdown-list {
+  width: 212px;
+} */
+
+/* Radio Buttons */
+.radio-container {
+  display: inline-flex;
+  padding-top: 0px;
+}
+
+.radio-button {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+  align-items: center;
+  font-family:"Al Jazeera Arabic", sans-serif;
+}
+
+.radio-button input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+html[dir='rtl'] select{
+  font-family: 'Al Jazeera Arabic' !important;
+}
+
+.radio {
+  --radio-size: 30px;
+  position: relative;
+  display: inline-block;
+  width: var(--radio-size);
+  height: var(--radio-size);
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  transform: translateZ(-25px);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio::before {
+  --radio-checked-size: 18px;
+  position: absolute;
+  content: '';
+  width: var(--radio-checked-size);
+  height: var(--radio-checked-size);
+  border-radius: 50%;
+  background-color: #029B47;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio-button input[type="radio"]:checked+.radio {
+  transform: translateZ(0px);
+}
+
+.radio-button input[type="radio"]:checked+.radio::before {
+  opacity: 1;
+}
+
+
+
+
+.section-sepertator {
+  height: 1px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: #BEC3C1;
+}
+
+.table-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rectangle-flag {
+  width: 113px;
+}
+
+.rectangle-flag img {
+  width: 100%;
+}
+
+.county-info {
+  gap: 30px;
+}
+
+/* Table */
+
+.summary-table {
+  border-spacing: 0px;
+  border-collapse: separate;
+  border: 1px solid #A8A8A8;
+  border-radius: 10px;
+  margin-top: 18px;
+  width: 100%;
+}
+thead{
+border-radius: 10px;
+}
+.summary-table thead th {
+  border-bottom: 1px solid #D8D9DB;
+}
+
+.summary-table tfoot th {
+  border-top: 7px solid #F5F5F5
+}
+
+
+.summary-table th {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.summary-table td {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+ font-family:"Al Jazeera Arabic", sans-serif;
+  overflow: hidden;
+  padding: 15px 5px;
+  word-break: normal;
+}
+
+.summary-table tbody tr:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+
+.project-name a,
+.project-name a:visited {
+  color: #029B47 !important;
+  text-decoration: underline;
+}
+
+
+
+
+.location-sort {
+  position: relative;
+  min-width: 200px;
+}
+
+.location-sort img {
+  position: absolute;
+  right: 20px;
+  display: block;
+  top: 6px;
+}
+
+
+.location-sort select.order-by {
+  padding-right: 55px;
+  min-width: 350px;
+}
+
+.country-info .first-col {
+  width: 70%;
+}
+
+.country-info .second-col {
+  width: 30%;
+}
+
+/* Project Info */
+.summary-cards-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.summary-card-vertical {
+  border: 1px solid #A5A5A5;
+  border-radius: 21px;
+  cursor: pointer;
+}
+
+.summary-card-vertical .flag-img {
+  width: 41px;
+  height: 41px;
+}
+
+.summary-card-vertical .arrow-img {
+  transform: rotate(90deg);
+  object-fit: unset;
+}
+html[lang='en-US'] .summary-card-vertical .arrow-img {
+  transform: rotate(270deg);
+}
+
+.summary-card-vertical-heading {
+  background-color: #F7F7F7;
+  padding: 15px 25px;
+  border-radius: 21px 21px 0px 0px;
+}
+
+.summary-card-vertical-heading>div {
+  gap: 17px;
+}
+
+.summary-card-vertical-body {
+  padding: 40px 30px;
+}
+
+.rectangle-flag-l {
+  width: 280px;
+  min-height: 100%;
+  border: 1px solid #707070;
+  border-radius: 27px;
+}
+
+.rectangle-flag-l img {
+  width: 100%;
+  height: 100% !important;
+  border-radius: 27px !important;
+
+}
+
+.first-col-row1 {
+  display: flex;
+  gap: 20px;
+}
+
+.first-col-row1 .country-info {
+  border-radius: 27px;
+  background: url(/images/background-pattern.svg), linear-gradient(90deg, #31865D, #164A35, #154A34);
+  width: 100%;
+  padding: 30px 40px;
+}
+
+.country-info-heading {
+  margin-bottom: 10px;
+}
+
+/* Group Tabs */
+.group-tabs {
+  position: relative;
+  margin-top: 35px;
+}
+
+/* Group Tabs */
+.tab-links.active-link {
+  color: #029B47;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 11px;
+  transition: 0.5s;
+}
+
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  cursor: pointer;
+  color: #4A4B4C;
+}
+
+.tab-links:nth-child(2) {
+  margin-right: 50px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+
+.project-table {
+  padding: 0px 0px;
+}
+
+.project-table td {
+  color: #4A4B4C;
+}
+
+.project-table tr td:first-child {
+  padding: 0px 30px;
+}
+
+.project-table td:nth-child(2) {
+  font-family: "Al Jazeera Arabic", sans-serif;
+  font-weight: 700;
+}
+
+.project-table tbody tr:nth-child(even) {
+  background-color: transparent;
+}
+
+.project-table tbody tr:nth-child(odd) {
+  background-color: transparent;
+}
+
+
+.resources {
+  margin-top: 30px;
+}
+
+/* Accordion */
+.accordion {
+  width: 100%;
+}
+
+.accordion-item {
+  margin-bottom: 16px;
+  border: 1px solid #A5A5A5;
+  border-radius: 21px;
+}
+
+.accordion-item:is(:hover, :focus) {
+  border-color: #029B47
+}
+
+.accordion-button {
+  padding: 11px 35px;
+  background: #FFF;
+  border-radius: 21px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-button:hover{
+  background: none;
+}
+.accordion-button:focus{
+  background: none;
+}
+
+.accordion-title {
+  gap: 35px;
+  color: #0A3023;
+  align-items: center;
+}
+
+.accordion-icon {
+  filter: invert(52%) sepia(43%) saturate(525%) hue-rotate(4deg) brightness(91%) contrast(86%);
+  transition: transform 0.3s ease-out;
+}
+
+.accordion-content {
+  padding: 0 16px;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-out, padding 0.3s ease-out;
+  background: white;
+  border-bottom-right-radius: 21px;
+  border-bottom-left-radius: 21px;
+}
+
+.accordion-content.show {
+  height: max-content;
+  padding: 16px;
+  border-top: 1px solid #C9C9C9;
+  -webkit-animation-name: fadeInCenter;
+  animation-name: fadeInCenter;
+  animation-duration: 1s;
+}
+
+.accordion-item:has(.accordion-content.show) .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-conten-title {
+  color: #0A3023;
+  margin: 23px 0px 18px 0px;
+}
+
+.accordion .summary-table th,
+.accordion .summary-table td {
+  font-size: 16px;
+}
+
+.accordion .summary-table tfoot tr th {
+  font-size: 20px;
+}
+
+.accordion .summary-table {
+  border-radius: 10px;
+  margin-bottom: 40px !important;
+  padding:0px;
+}
+table.summary-table thead tr th:last-child {
+    padding: 10px !important;
+    border-radius: 10px 0 0 0;
+}
+table.summary-table thead tr th:first-child {
+    padding: 10px !important;
+    border-radius: 0 10px 0 0;
+}
+.accordion .project-name a,
+.accordion .project-name a:visited {
+  /* color: #272D3B !important; */
+  color: #029B47 !important;
+}
+
+.accoudion-icon {
+  width: 40px;
+}
+
+.mfp-content .ajax-content .country-card {
+  margin: 0 auto;
+}
+.mfp-close {
+  top: 2px;
+  right: 600px;
+  height: 20px;
+  width: 20px;
+  line-height: 30px;
+  color: black;
+  /* border: 1px solid #e3151a; */
+  /* border-radius: 50%;*/
+}
+
+/* Responsive */
+@media (min-width:1700px) {
+  .country-info .second-row {
+      gap: 50px;
+      margin-top: 30px;
+  }
+
+  .summary-cards-vertical {
+      gap: 30px;
+  }
+}
+
+@media (max-width:768px) {
+  .country-card {
+      width: 100%;
+  }
+
+  .main-content {
+      margin: 0 0 4% 0;
+  }
+
+  .filter-section,
+  .form-container,
+  .radio-container {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .table-heading {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+  }
+
+  .summary-card {
+      min-width: 374px;
+  }
+
+  .summary-table {
+      display: block;
+      overflow-x: auto;
+  }
+
+  .dropdown-list label {
+      display: none;
+  }
+
+  .country-info .second-row {
+      flex-direction: column-reverse;
+  }
+
+  .country-info .first-col,
+  .country-info .second-col {
+      width: 100%;
+  }
+
+  .summary-cards-vertical {
+      flex-direction: row;
+  }
+
+  .rectangle-flag-l {
+      display: none;
+  }
+
+  .first-col-row1 .country-info {
+      padding: 10px 20px;
+  }
+
+  .tab-links.text-26 {
+      font-size: 18px !important;
+  }
+
+  .tab-titles {
+      margin: 15px 5px 25px;
+      justify-content: space-between;
+  }
+
+  .tab-links:nth-child(2) {
+      margin-right: 20px;
+  }
+
+  .accordion-title span {
+      font-size: 22px !important;
+      text-align: right;
+  }
+
+  .country-info .form-container {
+      align-items: center
+  }
+
+  .accordion-conten-title {
+      font-size: 18px !important;
+  }
+
+  .accoudion-icon {
+      width: 40px;
+  }
+
+  .accordion-title {
+      gap: 15px;
+  }
+
+  .accordion-button {
+      padding: 11px 25px;
+  }
+
+  .table-filter-tabs {
+      flex-direction: column;
+      gap: 30px
+  }
+
+  .table-filter-tabs .form-container,
+  .table-filter-tabs .dropdown-list {
+      width: 100%;
+  }
+
+  .radio-container {
+      flex-direction: row;
+  }
+
+  .summary-cards.scrollable-tabs {
+      gap: 100px;
+  }
+
+  .summary-card {
+      padding: 25px;
+  }
+
+  .card-icon {
+      margin-right: -31px;
+      padding: 15px 0px 46px 33px;
+  }
+}
+/* New CSS File for Project Details */
+.secondary-title {
+  color: #4A4B4C !important;
+  font-family: "Al Jazeera Arabic", sans-serif !important;
+  font-weight: bold !important;
+  font-size: 30px;
+}
+
+.description,
+.description-list li span {
+  font-family: "Al Jazeera Arabic", sans-serif !important;
+  font-size: 18px;
+  color: #707070 !important;
+  line-height: 1.7;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+
+
+.font-bold {
+  font-weight: bold;
+}
+
+.description-list {
+  margin-top: 30px;
+}
+
+.description-list li {
+  list-style-image: url('/wp-content/plugins/arab-funds/includes/images/arrow-icon.svg');
+  list-style-position: outside;
+  margin-right: 22px;
+  padding-right: 15px;
+
+}
+
+.vertical-table {
+  border-spacing: 0px;
+  border-collapse: separate;
+  border: 1px solid #A8A8A8;
+  border-radius: 15px;
+  margin-top: 18px;
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 35px;
+}
+
+.vertical-table tbody .th {
+  background-color: #F5F5F5;
+  font-weight: bold;
+  font-family: "Al Jazeera Arabic", sans-serif;
+  font-weight: 700;
+}
+
+.vertical-table tbody td {
+  text-align: right;
+  padding: 10px 36px;
+}
+
+.vertical-table tbody tr:nth-child(even),
+.vertical-table tbody tr:nth-child(odd) {
+  background-color: transparent !important;
+}
+
+.vertical-table tbody tr:first-child td:first-child {
+  border-radius: 0px 15px 0px 0px;
+}
+
+.vertical-table tbody tr:last-child td:first-child {
+  border-radius: 0px 0px 15px 0px;
+}
+
+.vertical-table tbody tr:not(:last-child) td {
+  border-bottom: 1px solid rgba(168, 168, 168, 0.58);
+}
+
+/* Training Module - Video Css */ 
+.training-item {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#video-popup video {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto; /* Center the video */
+}
+
+/* New CSS File for Project Details end*/
+
+@media (max-width: 365px) {
+  .tab-links.text-26 {
+      font-size: 15px !important;
+  }
+}
+
+
+/* Animation */
+@keyframes zoomIn {
+  0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3)
+  }
+
+  50% {
+      opacity: 1
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3)
+  }
+
+  50% {
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInCenter {
+  0% {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@keyframes fadeInCenter {
+  0% {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+html[dir='rtl'] .elementor-heading-title {
+  font-family: "Al Jazeera Arabic", Sans-serif !important;
+  font-weight: 600;
+}
+
+
+html[lang="en-US"] .vertical-table tbody tr:first-child td:first-child {
+  border-radius: 15px 0px 0px 0px;
+}
+
+html[lang="en-US"] .vertical-table tbody tr:first-child td:last-child {
+  border-radius: 0px 15px 0px 0px;
+}
+
+html[lang="en-US"] .vertical-table tbody tr:last-child td:first-child {
+  border-radius: 0px 0px 0px 15px;
+}
+
+html[lang="en-US"] .vertical-table tbody tr:last-child td:last-child {
+  border-radius: 0px 0px 15px 0px;
+}
+
+.vertical-table tbody td {
+  text-align: right;
+}
+
+html[lang="en-US"] .vertical-table tbody td {
+  text-align: left;
+}
+
+.vertical-table tbody .th {
+  font-family: "Al Jazeera Arabic", Sans-serif !important;
+  font-weight: 600;
+}
+
+.vertical-table tbody>tr:nth-child(odd)>td {
+  background-color: transparent !important;
+}
+
+.vertical-table tbody>tr>td:nth-child(odd) {
+  background-color: #F5F5F5 !important;
+}
+
+.vertical-table tbody tr:not(:last-child) td {
+  border-bottom: 1px solid rgba(168, 168, 168, 0.58) !important;
+}
+
+
+.vertical-table tbody tr:hover>td,
+.vertical-table tbody tr:hover>th {
+  background-color: hsla(0, 0%, 50.2%, .1019607843) !important;
+}
+
+.project-info p {
+ font-family:"Al Jazeera Arabic", sans-serif;
+  color: #707070 !important;
+  text-wrap: unset !important;
+}
+
+
+.project-info .bodyText strong {
+  font-family: "Al Jazeera Arabic", sans-serif;
+  color: #4A4B4C;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+  margin-top: 20px;
+}
+/* .project-info li {
+  list-style-image: url('/wp-content/plugins/arab-funds/includes/images/arrow-icon.svg');
+  list-style-position: outside;
+  margin-right: 22px;
+  padding-right: 15px;
+  color: #707070;
+  position: relative;
+} */
+.project-info li {
+  margin-right: 2rem;
+  padding-right: 15px;
+  color: #707070;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+/* .project-info li::before {
+  content: url(/wp-content/plugins/arab-funds/includes/images/arrow-icon.svg);
+  position: absolute;
+  left: -30px;
+  top: 0;
+  transform: rotate(180deg);
+}
+html[dir='rtl'] .project-info li::before {
+  left: auto;
+  right:-30px;
+  transform: rotate(0deg);
+} */
+.project-info .bodyTextlist {
+  margin-top: 25px;
+}
+.page_project_details {
+  margin: 20px auto;
+}
+
+.page_project_details h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.project-info p {
+  color: #707070 !important;
+}
+
+.project-info .bodyText strong,
+.project-info>p:first-child {
+  font-family: "Al Jazeera Arabic", sans-serif;
+  color: #4A4B4C !important;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+  margin-top: 20px;
+}
+
+.project-info li.bodyText strong {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.project-info li {
+  list-style: none;
+}
+
+.project-info ul {
+  margin-top: 15px;
+}
+.project-info p strong br {
+  display: none;
+}
+
+
+.project-info p {
+    color: #707070 !important;
+}
+ 
+.project-info .bodyText strong,
+.project-info>p:first-child {
+    font-family: "Al Jazeera Arabic", sans-serif;
+    color: #4A4B4C !important;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+    margin-top: 20px;
+}
+ 
+.project-info li.bodyText strong {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+ 
+.project-info li {
+    list-style: none;
+}
+ 
+.project-info ul {
+    margin-top: 15px;
+}
+ 
+/* .project-info li::before {
+    top: 6px;
+}
+  */
+.project-info li {
+    padding: 0px;
+}
+.project-info .bodyTextlist {
+  margin-top: 15px;
+}
+
+.project-info li {
+  margin-right: 2rem;
+  margin-left: 0rem !important;
+}
+
+.project-info li.bodyText strong {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline;
+  color: #707070 !important;
+}
+
+.project-info ul ul {
+  margin-right: 2rem;
+}
+
+html[lang="en-US"] .project-info li {
+  margin-right: 0rem;
+  margin-left: 2rem !important
+  }
+
+
+html[lang="en-US"] .project-info li strong {
+  font-size: 18px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  display: inline !important;
+  color: #707070 !important;
+}
+
+/* html[lang="en-US"] .project-info li::before {
+  top: -4px;
+} */
+.project-info ol.bodyText strong {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline;
+  color: #707070 !important;
+}
+
+ol.bodyText{
+  margin-top:15px
+}
+   
+  .project-info ol {
+      margin-top: 15px;
+  }

@@ -1,0 +1,14 @@
+<svg id="pie-chart" xmlns="http://www.w3.org/2000/svg" width="49.713" height="49.713" viewBox="0 0 49.713 49.713">
+  <g id="Group_50074" data-name="Group 50074">
+    <path id="Path_157240" data-name="Path 157240" d="M295.613,270.429l10.477,10.477A18.836,18.836,0,0,0,310.607,270H295.79A4.358,4.358,0,0,1,295.613,270.429Z" transform="translate(-266.798 -243.681)" fill="#029b47"/>
+    <path id="Path_157241" data-name="Path 157241" d="M274.815,69.716l5.277-5.277A18.909,18.909,0,0,0,270,60.571V75.387a4.4,4.4,0,0,1,2.674,2.674H287.49A18.948,18.948,0,0,0,282.271,66.4l-5.389,5.389Z" transform="translate(-243.681 -54.667)" fill="#029b47"/>
+    <path id="Path_157242" data-name="Path 157242" d="M373.53,63.924a19.18,19.18,0,0,1,2.18,1.956l2.956-2.956h8.167V60h-9.378Z" transform="translate(-337.12 -54.151)" fill="#029b47"/>
+    <path id="Path_157243" data-name="Path 157243" d="M420,0h8.773V2.924H420Z" transform="translate(-379.06)" fill="#029b47"/>
+    <path id="Path_157244" data-name="Path 157244" d="M69.716,73.246,64.44,67.969a18.909,18.909,0,0,0-3.869,10.092H75.387a4.4,4.4,0,0,1,2.674-2.674V60.571A18.948,18.948,0,0,0,66.4,65.79l5.389,5.389Z" transform="translate(-54.667 -54.667)" fill="#029b47"/>
+    <path id="Path_157245" data-name="Path 157245" d="M9.773,94.53a19.178,19.178,0,0,1,1.956-2.18L9.378,90H0v2.924H8.167Z" transform="translate(0 -81.227)" fill="#029b47"/>
+    <path id="Path_157246" data-name="Path 157246" d="M0,30H8.773v2.924H0Z" transform="translate(0 -27.076)" fill="#029b47"/>
+    <path id="Path_157247" data-name="Path 157247" d="M75.387,270H60.571a19.036,19.036,0,0,0,9.758,15.169L73.9,279.46l2.48,1.55L73.011,286.4a18.981,18.981,0,0,0,18.88-3.422L81.414,272.5A4.39,4.39,0,0,1,75.387,270Z" transform="translate(-54.667 -243.681)" fill="#029b47"/>
+    <path id="Path_157248" data-name="Path 157248" d="M12.349,430.919H0v2.924H13.97l4.374-7a18.928,18.928,0,0,1-2.682-1.226Z" transform="translate(0 -384.13)" fill="#029b47"/>
+    <path id="Path_157249" data-name="Path 157249" d="M0,420H10.235v2.924H0Z" transform="translate(0 -379.06)" fill="#029b47"/>
+  </g>
+</svg>
