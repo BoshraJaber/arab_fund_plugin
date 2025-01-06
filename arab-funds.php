@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Arab Funds
+Plugin Name: Arab Fund
 Plugin URI: https://www.arabfund.org/
 Description: Custom development and enhancements of new features for Arab Funds
 Version: 1.0.0
