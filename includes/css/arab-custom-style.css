@@ -1968,3 +1968,26 @@ ol.bodyText{
   .project-info ol {
       margin-top: 15px;
   }
+
+
+.report_box p {
+    background: #2D8058;
+    color: #fff !important;
+    padding: 20px 30px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    transition: all .42s;
+    width: 100%;
+    min-height: 130px;
+}
+
+.report_box:hover p {
+    background: #174a31;
+}
+
+.report_body{
+    font-size: 16px !important;
+  line-height: 1.4;
+  font-style: italic;
+  font-weight: 400;
+}
